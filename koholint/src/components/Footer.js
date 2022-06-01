@@ -5,7 +5,6 @@ import githubImg from "../assets/images/logos/github-img.png"
 import logo from "../assets/images/logos/logo.png"
 
 const Footer = () => {
-  const email = "bemrullo85@gmail.com"
   return (
     <footer>
       <div className="footer-content-container">
@@ -13,7 +12,6 @@ const Footer = () => {
           <Link to="/">
             <img className="bob-logo" src={logo} alt="logo" />
           </Link>
-          <p>{email}</p>
         </div>
         <div className="flex">
           <div>

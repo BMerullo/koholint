@@ -20,7 +20,7 @@ ul {
 .page {
   margin: auto;
   width: 70%;
-  height: 50vw;
+  height: 90vw;
 }
 
 .active-link {
@@ -75,5 +75,39 @@ footer {
 }
 
 .bob-logo {
-  height: 70px;
+  height: 40px;
+}
+
+/* ####### */
+/* #Hero# */
+/* ####### */
+
+.hero-img {
+  height: 100%;
+  border-radius: 15px;
+}
+
+.hero {
+  height: 45vh;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.hero-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+}
+
+.hero-text {
+  color: white;
+  text-align: center;
+  font-size: x-large;
 }
