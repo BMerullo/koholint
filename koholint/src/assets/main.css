@@ -1,0 +1,79 @@
+body {
+  margin: auto;
+  font-family: "Cinzel", sarif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.page {
+  margin: auto;
+  width: 70%;
+  height: 50vw;
+}
+
+.active-link {
+  color: #32c417;
+}
+
+/* ####### */
+/* #Nav-Bar# */
+/* ####### */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+.logo {
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.nav-link {
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+/* ####### */
+/* #Footer# */
+/* ####### */
+
+footer {
+  width: 100%;
+  background-color: rgb(247 244 244);
+}
+
+.footer-content-container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 20px 0px;
+}
+
+.footer-list {
+  margin-right: 60px;
+}
+
+.link-icon {
+  height: 15px;
+}
+
+.bob-logo {
+  height: 70px;
+}
