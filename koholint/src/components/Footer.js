@@ -13,7 +13,7 @@ const Footer = () => {
             <img className="bob-logo" src={logo} alt="logo" />
           </Link>
         </div>
-        <div className="flex">
+        <div className="footer-links">
           <div>
             <ul className="footer-list">
               <li>
@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
           <div>
             <ul className="footer-list">
-              <a href="#">Profile</a>
+              <a href="#">Bob's Portfolio</a>
               <div>
                 <li>
                   <a href="https://www.linkedin.com/in/bobmerullo/">

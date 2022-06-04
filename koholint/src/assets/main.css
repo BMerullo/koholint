@@ -27,6 +27,12 @@ ul {
   color: #32c417;
 }
 
+@media only screen and (max-width: 900px) {
+  .page {
+    margin-top: 20px;
+  }
+}
+
 /* ####### */
 /* #Nav-Bar# */
 /* ####### */
@@ -39,14 +45,68 @@ nav {
   margin: auto;
 }
 
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo {
-  height: 30px;
+  height: 28px;
   margin-bottom: 5px;
 }
 
 .nav-link {
-  margin-left: 20px;
   font-weight: 500;
+}
+.btn-logo {
+  height: 28px;
+}
+
+.btn-link {
+  height: 37px;
+  width: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 901px) {
+  #mobilescreen {
+    display: none;
+  }
+  .mobilescreen {
+    display: none;
+  }
+  .nav-links {
+    /* width: 70%; */
+  }
+  .nav-link {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #fullscreen {
+    display: none;
+  }
+  .fullscreen {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    border-bottom: solid black 1px;
+  }
+
+  .nav-links {
+    display: flex;
+    font-size: small;
+  }
 }
 
 /* ####### */
@@ -76,6 +136,29 @@ footer {
 
 .bob-logo {
   height: 40px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer-content-container {
+    display: block;
+    width: 70%;
+    margin: auto;
+    padding: 20px 0px;
+  }
+
+  .footer-list {
+    margin-right: 0px;
+    padding-left: 0px;
+  }
+
+  .footer-links {
+    justify-content: space-between;
+  }
 }
 
 /* ####### */
@@ -110,4 +193,10 @@ footer {
   color: white;
   text-align: center;
   font-size: x-large;
+}
+
+@media only screen and (max-width: 900px) {
+  .hero-text {
+    font-size: medium;
+  }
 }

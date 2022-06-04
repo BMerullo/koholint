@@ -16,7 +16,7 @@ export default function Home() {
           ></StaticImage>
           <div className="hero-container">
             <div className="hero-text">
-              <h1>Koholint Wiki</h1>
+              <h1>The Legend of Zelda</h1>
               {/* <h4>A guide to The Legend of Zelda</h4> */}
               <h4>Link's Awakening</h4>
             </div>
