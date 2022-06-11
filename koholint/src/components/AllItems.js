@@ -13,8 +13,8 @@ const query = graphql`
           gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
         }
         info {
-          location
-          catagory
+          locations
+          catagories
         }
       }
     }

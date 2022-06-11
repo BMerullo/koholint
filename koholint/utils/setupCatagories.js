@@ -2,7 +2,7 @@ const setupCatagories = items => {
   const allCatagories = {}
 
   items.forEach(item => {
-    item.info.catagory.forEach(catagory => {
+    item.info.catagories.forEach(catagory => {
       if (allCatagories[catagory]) {
         allCatagories[catagory] = allCatagories[catagory] + 1
       } else {

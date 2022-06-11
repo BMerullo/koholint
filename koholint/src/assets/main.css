@@ -20,7 +20,8 @@ ul {
 .page {
   margin: auto;
   width: 70%;
-  height: 90vw;
+  /* height: 90vw; */
+  /* margin-top: 20px; */
 }
 
 .active-link {
@@ -200,4 +201,57 @@ footer {
   .hero-text {
     font-size: medium;
   }
+}
+
+/* ####### */
+/* #Items# */
+/* ####### */
+
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 2rem 2rem;
+  padding-bottom: 3rem;
+
+  flex: 4;
+}
+
+.item {
+  display: block;
+  /* flex: 1; */
+}
+
+.item-img-container {
+  height: 180px;
+  width: 274px;
+  border-style: solid black 1px;
+}
+
+.item-img {
+  height: 100%;
+  /* width: 100%; */
+  border-radius: 10px;
+}
+
+.catagory-container {
+  display: inline-block;
+  width: 20%;
+  flex: 1;
+  /* flex: 1; */
+}
+
+.catagory-list {
+  display: inline-block;
+}
+
+.catagory-text {
+  margin-bottom: 10px;
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }

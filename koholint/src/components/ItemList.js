@@ -4,12 +4,18 @@ import { GatsbyImage } from "gatsby-plugin-image"
 
 const ItemList = ({ items = [] }) => {
   return (
-    <div>
+    <div className="item-list">
       {items.map((item, index) => {
-        const { id, name, image } = item
+        const { id, name, image, slug } = item
         return (
-          <Link key={id}>
-            <GatsbyImage image={image.gatsbyImageData} alt={name} />
+          <Link key={id} className="item">
+            <div className="item-img-container">
+              <GatsbyImage
+                image={image.gatsbyImageData}
+                alt={name}
+                className="item-img"
+              />
+            </div>
             <h5>{name}</h5>
             {/* <p>Location | {info.location}</p> */}
           </Link>

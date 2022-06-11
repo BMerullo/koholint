@@ -5,14 +5,16 @@ import setupCatagories from "../../utils/setupCatagories"
 const CatagoryList = ({ items }) => {
   const newCatagory = setupCatagories(items)
   return (
-    <div className="tag-container">
+    <div className="catagory-container">
       <h4>Catagories</h4>
-      <div>
+      <div className="catagory-list">
         {newCatagory.map((catagory, index) => {
           const [text, value] = catagory
           return (
             <Link to={`/${text}`} key={index}>
-              {text} ({value})
+              <div className="catagory-text">
+                {text} ({value})
+              </div>
             </Link>
           )
         })}
