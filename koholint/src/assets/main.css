@@ -255,8 +255,13 @@ footer {
 
 .item-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   width: 100%;
+}
+
+.item-list {
+  display: flex;
+  justify-content: right;
 }
 
 @media only screen and (max-width: 730px) {
@@ -290,12 +295,21 @@ footer {
     border-bottom: solid #d2c9c9 1px;
     margin-bottom: 15px;
   }
-}
 
-.catagory-title {
-  font-size: x-large;
-  margin-top: 0px;
+  .catagory-title {
+    font-size: x-large;
+    margin-top: 0px;
+  }
+
+  .item-list {
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 900px) {
+  .item-img-container {
+    height: 150px;
+    width: 244px;
+    border-style: solid black 1px;
+  }
 }

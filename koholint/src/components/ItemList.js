@@ -4,6 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 
 const ItemList = ({ items = [] }) => {
   return (
+    // <div className="item-container">
     <div className="item-list">
       {items.map((item, index) => {
         const { id, name, image, slug } = item
@@ -22,6 +23,7 @@ const ItemList = ({ items = [] }) => {
         )
       })}
     </div>
+    // </div>
   )
 }
 
