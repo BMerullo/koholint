@@ -12,6 +12,11 @@ ul {
   list-style: none;
 }
 
+span {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -220,17 +225,16 @@ footer {
   text-align: center;
   gap: 2rem 2rem;
   padding-bottom: 3rem;
-  flex: 4;
+  /* flex: 5; */
 }
 
 .item {
   display: block;
-  /* flex: 1; */
 }
 
 .item-img-container {
-  height: 180px;
-  width: 274px;
+  height: 170px;
+  width: 260px;
   border-style: solid black 1px;
 }
 
@@ -242,15 +246,23 @@ footer {
 
 .catagory-container {
   display: inline-block;
-  flex: 1;
+  /* flex: 2; */
 }
 
 .catagory-list {
   display: inline-block;
 }
 
-.catagory-text {
+.catagory-text-container {
   margin-bottom: 10px;
+}
+
+.catagory-text {
+  color: #666;
+}
+
+.catagory-text:hover {
+  color: #32c417;
 }
 
 .item-container {
@@ -280,7 +292,7 @@ footer {
 
   .catagory-container {
     text-align: center;
-
+    margin-right: 20px;
     margin-bottom: 20px;
     padding: 5px;
     border-radius: 5%;
@@ -308,8 +320,63 @@ footer {
 
 @media only screen and (max-width: 900px) {
   .item-img-container {
-    height: 150px;
-    width: 244px;
+    height: 160px;
+    width: 255px;
     border-style: solid black 1px;
   }
+}
+
+/* ####### */
+/* #Catagories# */
+/* ####### */
+
+.catagories-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 40px;
+  margin-bottom: 60vh;
+}
+
+.catagory {
+  background: #999;
+  border-radius: 1rem;
+  text-align: center;
+  color: white;
+  transition: 0.3s ease-in-out all;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.catagory:hover {
+  background-color: #32c417;
+}
+
+.hero-catagory {
+  height: 25vh;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+/* ####### */
+/* #Error# */
+/* ####### */
+
+.error-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+}
+
+.error {
+  height: 90vh;
+  position: relative;
+  margin-bottom: 2rem;
 }

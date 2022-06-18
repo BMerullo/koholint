@@ -7,14 +7,18 @@ const CatagoryList = ({ items }) => {
   return (
     <div className="catagory-flex">
       <div className="catagory-container">
-        <h4 className="catagory-title">Catagories</h4>
+        <h2 className="catagory-title">Catagories</h2>
         <div className="catagory-list">
           {newCatagory.map((catagory, index) => {
             const [text, value] = catagory
             return (
               <Link to={`/${text}`} key={index}>
-                <div className="catagory-text">
-                  {text} ({value})
+                <div className="catagory-text-container">
+                  <span className="catagory-text">
+                    <h4>
+                      {text} ({value})
+                    </h4>
+                  </span>
                 </div>
               </Link>
             )
