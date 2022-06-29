@@ -1,39 +1,20 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, StaticQuery, useStaticQuery } from "gatsby"
 import ItemList from "../components/ItemList"
 import Layout from "../components/Layout"
-
-// const query = graphql`
-// //   {
-// //     contentfulLinksAwakening(name: { eq: $name }) {
-// //       description {
-// //         description
-// //       }
-// //       name
-// //       info {
-// //         catagories
-// //         locations
-// //       }
-// //       slug
-// //       image {
-// //         gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
-// //       }
-// //     }
-// //   }
-// // `
+import SingleLocation from "../components/SingleLocation"
 
 const LocationTemplate = ({ data, pageContext }) => {
   const items = data.allContentfulLinksAwakening.nodes
-  console.log(data)
+  const locationTitle = pageContext.location
   return (
-    <div>
-      <Layout>
-        <main className="page">
-          <h2>{pageContext.location}</h2>
-          <ItemList items={items} />
-        </main>
-      </Layout>
-    </div>
+    <Layout>
+      <main className="page">
+        <h2>{pageContext.location}</h2>
+        <SingleLocation title={locationTitle} />
+        <ItemList items={items} />
+      </main>
+    </Layout>
   )
 }
 

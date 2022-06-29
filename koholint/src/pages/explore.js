@@ -6,7 +6,7 @@ import setupLocations from "../../utils/setupLocations"
 
 const explore = ({ data }) => {
   const newLocations = setupLocations(data.allContentfulLinksAwakening.nodes)
-  console.log(data)
+  // console.log(data)
   return (
     <Layout>
       <main className="page">

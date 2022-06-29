@@ -29,7 +29,6 @@ const catagories = ({ data }) => {
             return (
               <Link to={`/${text}`} key={index} className="catagory">
                 <h5>{text}</h5>
-                {/* <p>{value} items</p> */}
               </Link>
             )
           })}
