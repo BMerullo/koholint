@@ -1,7 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { gatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
+import LocationItemList from "../components/LocationItemList"
 
 const ItemTemplate = ({ data }) => {
   const {
@@ -11,18 +12,23 @@ const ItemTemplate = ({ data }) => {
     info: { locations, catagories },
     locationBoolean,
   } = data.contentfulLinksAwakening
+  const pathToImage = getImage(image)
   const items = data.contentfulLinksAwakening
-
   // console.log(data)
   return (
     <Layout>
       <main className="page">
-        <div>
+        <GatsbyImage image={pathToImage} alt={name} />
+        <article>
           <h4>{name}</h4>
           <p>{description}</p>
           <p>Catagories: {catagories}</p>
-        </div>
-        {locationBoolean === true ? <div>test</div> : null}
+        </article>
+        {locationBoolean === true ? (
+          <div>
+            <LocationItemList name={name} />
+          </div>
+        ) : null}
       </main>
     </Layout>
   )
