@@ -1,4 +1,5 @@
 const path = require("path")
+const slugify = require("slugify")
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -42,7 +43,7 @@ exports.createPages = async ({ graphql, actions }) => {
   locationResult.data.allContentfulLinksAwakening.nodes.forEach(item => {
     item.info.locations.forEach(location => {
       createPage({
-        path: `/${location}`,
+        path: `${location}`,
         component: path.resolve(`src/templates/location-template.js`),
         context: {
           location: location,

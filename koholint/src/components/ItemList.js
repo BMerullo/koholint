@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
+import slugify from "slugify"
 
 const ItemList = ({ items = [] }) => {
   return (
@@ -8,8 +9,13 @@ const ItemList = ({ items = [] }) => {
       <div className="item-list">
         {items.map((item, index) => {
           const { id, name, image, slug } = item
+          const itemSlug = slugify(name, { lower: true })
           return (
-            <Link to={name} key={id} className="item">
+            <Link
+              to={`http://localhost:8000/${itemSlug}`}
+              key={id}
+              className="item"
+            >
               <div className="item-img-container">
                 <GatsbyImage
                   image={image.gatsbyImageData}

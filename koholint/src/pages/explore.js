@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
 import { graphql, Link } from "gatsby"
 import setupLocations from "../../utils/setupLocations"
+import slugify from "slugify"
 
 const explore = ({ data }) => {
   const newLocations = setupLocations(data.allContentfulLinksAwakening.nodes)
@@ -27,8 +28,9 @@ const explore = ({ data }) => {
         <section className="catagories-page">
           {newLocations.map((location, index) => {
             const [text] = location
+            const locationSlug = slugify(text, { lower: true })
             return (
-              <Link to={`/${text}`} key={index} className="catagory">
+              <Link to={`/${locationSlug}`} key={index} className="catagory">
                 <h5>{text}</h5>
               </Link>
             )
