@@ -225,7 +225,12 @@ footer {
   text-align: center;
   gap: 2rem 2rem;
   padding-bottom: 3rem;
-  /* flex: 5; */
+  /* flex: 5;*/
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 75%;
+  gap: 40px;
+  margin-bottom: 30vh; */
 }
 
 .item {
@@ -251,6 +256,7 @@ footer {
 
 .catagory-list {
   display: inline-block;
+  width: 25%;
 }
 
 .catagory-text-container {
@@ -379,4 +385,53 @@ footer {
   height: 90vh;
   position: relative;
   margin-bottom: 2rem;
+}
+
+/* ####### */
+/* #Single Item Page# */
+/* ####### */
+
+.singleItemTitle {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: #999 solid;
+}
+
+.singleItemContainer {
+  height: 50vh;
+  display: flex;
+  margin-top: 20px;
+}
+
+.itemImage {
+  width: 40%;
+  margin-right: 30px;
+  border-radius: 1rem;
+}
+
+.singleImage {
+  border-radius: 1rem;
+  margin-top: 20px;
+}
+
+.itemDescription {
+  width: 60%;
+  margin-left: 20px;
+}
+
+.descriptionText {
+  padding: 0px;
+}
+
+.locationItemList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 40px;
+  margin-bottom: 30vh;
+}
+
+.locationItemListTitle {
+  text-align: center;
+  margin-bottom: 20px;
 }

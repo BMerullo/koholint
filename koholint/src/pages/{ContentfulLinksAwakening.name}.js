@@ -18,17 +18,31 @@ const ItemTemplate = ({ data }) => {
   return (
     <Layout>
       <main className="page">
-        <GatsbyImage image={pathToImage} alt={name} />
-        <article>
-          <h4>{name}</h4>
-          <p>{description}</p>
-          <p>Catagories: {catagories}</p>
-        </article>
-        {locationBoolean === true ? (
-          <div>
-            <LocationItemList name={name} />
-          </div>
-        ) : null}
+        <h3 className="singleItemTitle">{name}</h3>
+        <section className=" singleItemContainer">
+          <article className="itemImage">
+            <div className="item-image-container">
+              <GatsbyImage
+                image={pathToImage}
+                alt={name}
+                className="singleImage"
+              />
+            </div>
+            <h5>Catagorie(s)</h5> : <button>{catagories}</button>
+            <h5>Location(s) : {locations}</h5>
+          </article>
+          <article className="itemDescription">
+            <p className="descriptionText">{description}</p>
+          </article>
+        </section>
+        <section className="locationItemList">
+          {locationBoolean === true ? (
+            <div>
+              <h3 className="locationItemListTitle">Found in {name} . . .</h3>
+              <LocationItemList name={name} />
+            </div>
+          ) : null}
+        </section>
       </main>
     </Layout>
   )
@@ -43,7 +57,7 @@ export const query = graphql`
       }
       id
       image {
-        gatsbyImageData(layout: FIXED, placeholder: BLURRED)
+        gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
       }
       info {
         locations
