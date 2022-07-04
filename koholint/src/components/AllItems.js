@@ -1,7 +1,8 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import CatagoryList from "./CatagoryList"
-import ItemList from "./ItemList"
+// import ItemList from "./ItemList"
+import MainPageItemList from "./MainPageItemList"
 
 const query = graphql`
   {
@@ -25,9 +26,11 @@ const AllItems = () => {
   const data = useStaticQuery(query)
   const items = data.allContentfulLinksAwakening.nodes
   return (
-    <section className="item-container">
-      <CatagoryList items={items} />
-      <ItemList items={items} />
+    <section>
+      <div className="main-item-container">
+        <CatagoryList items={items} />
+        <MainPageItemList items={items} />
+      </div>
     </section>
   )
 }

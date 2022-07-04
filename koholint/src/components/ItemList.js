@@ -27,7 +27,7 @@ const ItemList = ({ items = [] }) => {
             </Link>
           )
         })}
-      </div>{" "}
+      </div>
     </div>
   )
 }

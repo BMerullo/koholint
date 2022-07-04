@@ -215,6 +215,21 @@ footer {
 }
 
 /* ####### */
+/* #Main Page# */
+/* ####### */
+
+.main-item-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-item-img-container {
+  height: 160px;
+  width: 225px;
+  border-style: solid black 1px;
+}
+
+/* ####### */
 /* #Items# */
 /* ####### */
 
@@ -225,21 +240,16 @@ footer {
   text-align: center;
   gap: 2rem 2rem;
   padding-bottom: 3rem;
-  /* flex: 5;*/
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 75%;
-  gap: 40px;
-  margin-bottom: 30vh; */
 }
 
 .item {
   display: block;
+  text-align: center;
 }
 
 .item-img-container {
   height: 180px;
-  width: 245px;
+  width: 247px;
   border-style: solid black 1px;
 }
 
@@ -419,7 +429,7 @@ footer {
 }
 
 .singleItemContainer {
-  height: 50vh;
+  /* height: 50vh; */
   display: flex;
   margin-top: 20px;
 }
@@ -437,7 +447,9 @@ footer {
 
 .itemDescription {
   width: 60%;
+  height: 20%;
   margin-left: 20px;
+  text-overflow: clip;
 }
 
 .descriptionText {
