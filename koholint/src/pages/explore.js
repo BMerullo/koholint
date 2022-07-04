@@ -30,7 +30,7 @@ const explore = ({ data }) => {
             const [text] = location
             const locationSlug = slugify(text, { lower: true })
             return (
-              <Link to={`/${locationSlug}`} key={index} className="catagory">
+              <Link to={`/${locationSlug}`} key={index} className="location">
                 <h5>{text}</h5>
               </Link>
             )

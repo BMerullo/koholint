@@ -215,6 +215,21 @@ footer {
 }
 
 /* ####### */
+/* #Main Page# */
+/* ####### */
+
+.main-item-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-item-img-container {
+  height: 160px;
+  width: 225px;
+  border-style: solid black 1px;
+}
+
+/* ####### */
 /* #Items# */
 /* ####### */
 
@@ -225,16 +240,16 @@ footer {
   text-align: center;
   gap: 2rem 2rem;
   padding-bottom: 3rem;
-  /* flex: 5; */
 }
 
 .item {
   display: block;
+  text-align: center;
 }
 
 .item-img-container {
-  height: 170px;
-  width: 260px;
+  height: 180px;
+  width: 247px;
   border-style: solid black 1px;
 }
 
@@ -251,6 +266,7 @@ footer {
 
 .catagory-list {
   display: inline-block;
+  width: 25%;
 }
 
 .catagory-text-container {
@@ -267,8 +283,7 @@ footer {
 
 .item-container {
   display: flex;
-  justify-content: right;
-  width: 100%;
+  justify-content: space-between;
 }
 
 .item-list {
@@ -320,7 +335,7 @@ footer {
 
 @media only screen and (max-width: 900px) {
   .item-img-container {
-    height: 160px;
+    height: 180px;
     width: 255px;
     border-style: solid black 1px;
   }
@@ -334,7 +349,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
-  gap: 40px;
+  gap: 42px;
   margin-bottom: 60vh;
 }
 
@@ -348,6 +363,20 @@ footer {
   width: 100%;
 }
 
+.location {
+  background: #999;
+  border-radius: 1rem;
+  text-align: center;
+  color: white;
+  transition: 0.3s ease-in-out all;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.location:hover {
+  background-color: #2d71ed;
+}
+
 .catagory:hover {
   background-color: #32c417;
 }
@@ -356,6 +385,14 @@ footer {
   height: 25vh;
   position: relative;
   margin-bottom: 2rem;
+}
+
+.catagory-location-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  gap: 45px;
+  margin-bottom: 60vh;
 }
 
 /* ####### */
@@ -379,4 +416,71 @@ footer {
   height: 90vh;
   position: relative;
   margin-bottom: 2rem;
+}
+
+/* ####### */
+/* #Single Item Page# */
+/* ####### */
+
+.singleItemTitle {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: #999 solid;
+}
+
+.singleItemContainer {
+  /* height: 50vh; */
+  display: flex;
+  margin-top: 20px;
+}
+
+.itemImage {
+  width: 40%;
+  margin-right: 30px;
+  border-radius: 1rem;
+}
+
+.singleImage {
+  border-radius: 1rem;
+  margin-top: 20px;
+}
+
+.itemDescription {
+  width: 60%;
+  height: 20%;
+  margin-left: 20px;
+  text-overflow: clip;
+}
+
+.descriptionText {
+  padding: 0px;
+}
+
+.locationItemList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 40px;
+  margin-bottom: 30vh;
+}
+
+.locationItemListTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.single-page-catagory-link {
+  padding: 5px;
+  background-color: #32c417;
+  color: white;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+.single-page-location-link {
+  padding: 5px;
+  background-color: #2d71ed;
+  color: white;
+  margin-left: 10px;
+  border-radius: 4px;
 }

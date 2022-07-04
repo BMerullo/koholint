@@ -6,7 +6,7 @@ const CatagoryList = ({ items }) => {
   const newCatagory = setupCatagories(items)
   return (
     <div className="catagory-flex">
-      <div className="catagory-container">
+      <div>
         <h2 className="catagory-title">Catagories</h2>
         <div className="catagory-list">
           {newCatagory.map((catagory, index) => {

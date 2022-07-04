@@ -3,10 +3,10 @@ import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import slugify from "slugify"
 
-const ItemList = ({ items = [] }) => {
+const MainPageItemList = ({ items = [] }) => {
   return (
     <div className="item-container">
-      <div className="catagory-location-page">
+      <div className="catagories-page">
         {items.map((item, index) => {
           const { id, name, image, slug } = item
           const itemSlug = slugify(name, { lower: true })
@@ -27,9 +27,9 @@ const ItemList = ({ items = [] }) => {
             </Link>
           )
         })}
-      </div>
+      </div>{" "}
     </div>
   )
 }
 
-export default ItemList
+export default MainPageItemList
