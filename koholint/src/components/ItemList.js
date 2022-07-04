@@ -6,7 +6,7 @@ import slugify from "slugify"
 const ItemList = ({ items = [] }) => {
   return (
     <div className="item-container">
-      <div className="item-list">
+      <div className="catagories-page">
         {items.map((item, index) => {
           const { id, name, image, slug } = item
           const itemSlug = slugify(name, { lower: true })

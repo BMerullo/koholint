@@ -238,8 +238,8 @@ footer {
 }
 
 .item-img-container {
-  height: 170px;
-  width: 260px;
+  height: 200px;
+  width: 300px;
   border-style: solid black 1px;
 }
 
@@ -273,8 +273,7 @@ footer {
 
 .item-container {
   display: flex;
-  justify-content: right;
-  width: 100%;
+  justify-content: space-between;
 }
 
 .item-list {
@@ -352,6 +351,20 @@ footer {
   transition: 0.3s ease-in-out all;
   padding: 0.5rem 0;
   width: 100%;
+}
+
+.location {
+  background: #999;
+  border-radius: 1rem;
+  text-align: center;
+  color: white;
+  transition: 0.3s ease-in-out all;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.location:hover {
+  background-color: #2d71ed;
 }
 
 .catagory:hover {
@@ -434,4 +447,20 @@ footer {
 .locationItemListTitle {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.single-page-catagory-link {
+  padding: 5px;
+  background-color: #32c417;
+  color: white;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+.single-page-location-link {
+  padding: 5px;
+  background-color: #2d71ed;
+  color: white;
+  margin-left: 10px;
+  border-radius: 4px;
 }
