@@ -67,12 +67,12 @@ const ItemTemplate = ({ data }) => {
             <p className="descriptionText">{description}</p>
           </article>
         </section>
+        {locationBoolean === true ? (
+          <h3 className="locationItemListTitle">Found in {name} . . .</h3>
+        ) : null}
         <section className="locationItemList">
           {locationBoolean === true ? (
-            <h3 className="locationItemListTitle">Found in {name} . . .</h3>
-          ) : null}
-          {locationBoolean === true ? (
-            <div>
+            <div className="catagories-page">
               <LocationItemList name={name} />
             </div>
           ) : null}

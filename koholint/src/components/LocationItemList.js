@@ -10,7 +10,7 @@ const query = graphql`
       nodes {
         id
         image {
-          gatsbyImageData(layout: FIXED, placeholder: BLURRED)
+          gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
         }
         info {
           locations
@@ -29,25 +29,27 @@ const LocationItemList = props => {
   console.log(props)
   console.log(items)
   return (
-    <div>
+    <div className="catagory-location-page">
       {items.map((item, index) => {
         const location = item.info.locations
         const itemSlug = slugify(item.name, { lower: true })
         return location.includes(props.name) ? (
-          <Link
-            to={`http://localhost:8000/${itemSlug}`}
-            key={item.id}
-            className="item"
-          >
-            <div className="item-img-container">
-              <GatsbyImage
-                image={item.image.gatsbyImageData}
-                alt={item.name}
-                className="item-img"
-              />
-            </div>
-            <h5>{item.name}</h5>
-          </Link>
+          <div className="item-img-container">
+            <Link
+              to={`http://localhost:8000/${itemSlug}`}
+              key={item.id}
+              className="item"
+            >
+              <div className="item-img">
+                <GatsbyImage
+                  image={item.image.gatsbyImageData}
+                  alt={item.name}
+                  className="item-img"
+                />
+              </div>
+              <h5>{item.name}</h5>
+            </Link>
+          </div>
         ) : null
       })}
     </div>

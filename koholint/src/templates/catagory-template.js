@@ -9,7 +9,7 @@ const CatagoryTemplate = ({ data, pageContext }) => {
     <Layout>
       <main className="page">
         <h2>{pageContext.catagory}</h2>
-        <div catagory-location-item-container>
+        <div className="catagory-location-page">
           <ItemList items={items} />
         </div>
       </main>

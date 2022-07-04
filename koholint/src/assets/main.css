@@ -238,8 +238,8 @@ footer {
 }
 
 .item-img-container {
-  height: 200px;
-  width: 300px;
+  height: 180px;
+  width: 245px;
   border-style: solid black 1px;
 }
 
@@ -325,7 +325,7 @@ footer {
 
 @media only screen and (max-width: 900px) {
   .item-img-container {
-    height: 160px;
+    height: 180px;
     width: 255px;
     border-style: solid black 1px;
   }
@@ -339,7 +339,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
-  gap: 40px;
+  gap: 42px;
   margin-bottom: 60vh;
 }
 
@@ -375,6 +375,14 @@ footer {
   height: 25vh;
   position: relative;
   margin-bottom: 2rem;
+}
+
+.catagory-location-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  gap: 45px;
+  margin-bottom: 60vh;
 }
 
 /* ####### */
