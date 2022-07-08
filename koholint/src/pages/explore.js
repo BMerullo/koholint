@@ -4,12 +4,14 @@ import { StaticImage } from "gatsby-plugin-image"
 import { graphql, Link } from "gatsby"
 import setupLocations from "../../utils/setupLocations"
 import slugify from "slugify"
+import SEO from "../components/SEO"
 
 const explore = ({ data }) => {
   const newLocations = setupLocations(data.allContentfulLinksAwakening.nodes)
   // console.log(data)
   return (
     <Layout>
+      <SEO title="Explore" />
       <main className="page">
         <header className="hero-catagory">
           <StaticImage

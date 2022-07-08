@@ -3,12 +3,14 @@ import { graphql, StaticQuery, useStaticQuery } from "gatsby"
 import ItemList from "../components/ItemList"
 import Layout from "../components/Layout"
 import SingleLocation from "../components/SingleLocation"
+import SEO from "../components/SEO"
 
 const LocationTemplate = ({ data, pageContext }) => {
   const items = data.allContentfulLinksAwakening.nodes
   const locationTitle = pageContext.location
   return (
     <Layout>
+      <SEO title={pageContext.locations} />
       <main className="page">
         <h2>{pageContext.location}</h2>
         <SingleLocation title={locationTitle} />

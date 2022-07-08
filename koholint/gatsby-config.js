@@ -10,7 +10,7 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: "Koholint Wiki",
-    description: "A guide to Zelda: Links Awakening",
+    description: "A guide to Zelda: Link's Awakening",
     author: "Bob Merullo",
   },
   plugins: [
@@ -18,6 +18,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-webfonts`,
       options: {

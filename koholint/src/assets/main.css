@@ -418,7 +418,7 @@ footer {
   .catagory-location-page {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 100px;
+    /* gap: 100px; */
     margin: auto;
   }
   .catagories-page {
