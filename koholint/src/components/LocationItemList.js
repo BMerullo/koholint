@@ -46,8 +46,8 @@ const LocationItemList = props => {
                   alt={item.name}
                   className="item-img"
                 />
+                <h5 className="location-link-title">{item.name}</h5>
               </div>
-              <h5>{item.name}</h5>
             </Link>
           </div>
         ) : null

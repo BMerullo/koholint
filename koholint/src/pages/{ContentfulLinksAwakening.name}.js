@@ -21,51 +21,51 @@ const ItemTemplate = ({ data }) => {
       <main className="page">
         <h3 className="singleItemTitle">{name}</h3>
         <section className=" singleItemContainer">
-          <article className="itemImage">
-            <div className="item-image-container">
+          <article className="image-description-container">
+            <div className="single-item-image-container">
               <GatsbyImage
                 image={pathToImage}
                 alt={name}
                 className="singleImage"
               />
             </div>
-            <div className="flex">
-              <h5>Location(s): </h5>
-              <h5>
-                {locations.map((location, index) => {
-                  const locationSlug = slugify(location, { lower: true })
-                  return (
-                    <Link
-                      to={`http://localhost:8000/${locationSlug}`}
-                      key={index}
-                      className="single-page-location-link"
-                    >
-                      {location}
-                    </Link>
-                  )
-                })}
-              </h5>
-            </div>
-            <div className="flex">
-              <h5>Catagorie(s): </h5>
-              <h5>
-                {catagories.map((catagory, index) => {
-                  return (
-                    <Link
-                      to={`http://localhost:8000/${catagory}`}
-                      key={index}
-                      className="single-page-catagory-link"
-                    >
-                      {catagory}
-                    </Link>
-                  )
-                })}
-              </h5>
-            </div>
-          </article>
-          <article className="itemDescription">
             <p className="descriptionText">{description}</p>
           </article>
+          <div className="tag-flex">
+            <h5>Location(s): </h5>
+            {/* <div className="tag-container"> */}
+            <h5 className="tag-container">
+              {locations.map((location, index) => {
+                const locationSlug = slugify(location, { lower: true })
+                return (
+                  <Link
+                    to={`http://localhost:8000/${locationSlug}`}
+                    key={index}
+                    className="single-page-location-link"
+                  >
+                    {location}
+                  </Link>
+                )
+              })}
+            </h5>
+          </div>
+          {/* </div> */}
+          <div className="tag-flex">
+            <h5>Catagorie(s): </h5>
+            <h5 className="tag">
+              {catagories.map((catagory, index) => {
+                return (
+                  <Link
+                    to={`http://localhost:8000/${catagory}`}
+                    key={index}
+                    className="single-page-catagory-link"
+                  >
+                    {catagory}
+                  </Link>
+                )
+              })}
+            </h5>
+          </div>
         </section>
         {locationBoolean === true ? (
           <h3 className="locationItemListTitle">Found in {name} . . .</h3>
