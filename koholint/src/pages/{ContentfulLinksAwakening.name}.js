@@ -4,6 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
 import LocationItemList from "../components/LocationItemList"
 import slugify from "slugify"
+import SEO from "../components/SEO"
 
 const ItemTemplate = ({ data }) => {
   const {
@@ -18,6 +19,7 @@ const ItemTemplate = ({ data }) => {
   // console.log(data)
   return (
     <Layout>
+      <SEO title={name} />
       <main className="page">
         <h3 className="singleItemTitle">{name}</h3>
         <section className=" singleItemContainer">

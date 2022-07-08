@@ -3,11 +3,13 @@ import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
 import setupCatagories from "../../utils/setupCatagories"
 import { StaticImage } from "gatsby-plugin-image"
+import SEO from "../components/SEO"
 
 const catagories = ({ data }) => {
   const newCatagories = setupCatagories(data.allContentfulLinksAwakening.nodes)
   return (
     <Layout>
+      <SEO title="Catagories" />
       <main className="page">
         <header className="hero-catagory">
           <StaticImage
