@@ -1,10 +1,8 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link } from "gatsby"
 import palmTree from "../assets/images/logos/island.jpg"
 
 const NavBar = () => {
-  const [show, setShow] = useState(false)
-
   return (
     <nav>
       <div className="nav-bar">
@@ -17,12 +15,12 @@ const NavBar = () => {
             <h2 className="link">Koholint Wiki</h2>
           </div>
         </Link>
-        <button
+        <Link
           className="btn-link mobilescreen"
-          onClick={() => setShow(!show)}
+          to="http://localhost:8000/koholint-island"
         >
           <img src={palmTree} alt="logo" className="btn-logo" />
-        </button>
+        </Link>
       </div>
       <div className="nav-links">
         <Link to="/" className="nav-link" activeClassName="active-link">
