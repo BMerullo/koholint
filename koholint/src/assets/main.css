@@ -542,6 +542,8 @@ footer {
   background-color: #32c417;
   color: white;
   margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   border-radius: 4px;
 }
 
@@ -550,12 +552,14 @@ footer {
   background-color: #2d71ed;
   color: white;
   margin-left: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   border-radius: 4px;
 }
 
 .tag-flex {
   display: flex;
+  align-items: center;
 }
 
 .tag-container {

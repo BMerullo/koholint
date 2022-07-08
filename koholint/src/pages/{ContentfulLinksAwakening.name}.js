@@ -52,7 +52,7 @@ const ItemTemplate = ({ data }) => {
           {/* </div> */}
           <div className="tag-flex">
             <h5>Catagorie(s): </h5>
-            <h5 className="tag">
+            <h5 className="tag-container">
               {catagories.map((catagory, index) => {
                 return (
                   <Link
