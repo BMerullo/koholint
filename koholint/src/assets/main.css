@@ -29,6 +29,10 @@ span {
   /* margin-top: 20px; */
 }
 
+img {
+  border-radius: 15px;
+}
+
 .active-link {
   color: #32c417;
 }
@@ -123,6 +127,9 @@ nav {
     display: flex;
     font-size: small;
   }
+  .catagory-text-container {
+    text-align: center;
+  }
 }
 
 /* ####### */
@@ -184,12 +191,14 @@ footer {
 .hero-img {
   height: 100%;
   border-radius: 15px;
+  position: relative;
 }
 
 .hero {
   height: 45vh;
   position: relative;
   margin-bottom: 2rem;
+  border-radius: 15px;
 }
 
 .hero-container {

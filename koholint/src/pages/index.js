@@ -20,7 +20,6 @@ export default function Home() {
           <div className="hero-container">
             <div className="hero-text">
               <h3>The Legend of Zelda</h3>
-              {/* <h4>A guide to The Legend of Zelda</h4> */}
               <h2>Link's Awakening</h2>
             </div>
           </div>

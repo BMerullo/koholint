@@ -16,7 +16,8 @@ const CatagoryList = ({ items }) => {
                 <div className="catagory-text-container">
                   <span className="catagory-text">
                     <h4>
-                      {text} ({value})
+                      {text}
+                      {/* ({value}) */}
                     </h4>
                   </span>
                 </div>

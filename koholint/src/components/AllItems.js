@@ -6,7 +6,10 @@ import MainPageItemList from "./MainPageItemList"
 
 const query = graphql`
   {
-    allContentfulLinksAwakening(sort: { fields: name, order: ASC }) {
+    allContentfulLinksAwakening(
+      sort: { fields: name, order: ASC }
+      filter: { featured: { eq: true } }
+    ) {
       nodes {
         id
         name
