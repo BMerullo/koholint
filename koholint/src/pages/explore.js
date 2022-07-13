@@ -23,7 +23,7 @@ const explore = ({ data }) => {
           ></StaticImage>
           <div className="hero-container">
             <div className="hero-text">
-              <h1>Locations</h1>
+              <h1>Explore</h1>
             </div>
           </div>
         </header>

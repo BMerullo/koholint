@@ -17,7 +17,7 @@ const NavBar = () => {
         </Link>
         <Link
           className="btn-link mobilescreen"
-          to="http://localhost:8000/koholint-island"
+          to="https://koholint-wiki.netlify.app/koholint-island"
         >
           <img src={palmTree} alt="logo" className="btn-logo" />
         </Link>
@@ -26,15 +26,15 @@ const NavBar = () => {
         <Link to="/" className="nav-link" activeClassName="active-link">
           home
         </Link>
-        <Link to="/explore" className="nav-link" activeClassName="active-link">
-          explore
-        </Link>
         <Link
           to="/catagories"
           className="nav-link"
           activeClassName="active-link"
         >
           catagories
+        </Link>
+        <Link to="/explore" className="nav-link" activeClassName="active-link">
+          explore
         </Link>
       </div>
     </nav>

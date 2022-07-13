@@ -41,7 +41,7 @@ const ItemTemplate = ({ data }) => {
                 const locationSlug = slugify(location, { lower: true })
                 return (
                   <Link
-                    to={`http://localhost:8000/${locationSlug}`}
+                    to={`https://koholint-wiki.netlify.app/${locationSlug}`}
                     key={index}
                     className="single-page-location-link"
                   >
@@ -58,7 +58,7 @@ const ItemTemplate = ({ data }) => {
               {catagories.map((catagory, index) => {
                 return (
                   <Link
-                    to={`http://localhost:8000/${catagory}`}
+                    to={`https://koholint-wiki.netlify.app/${catagory}`}
                     key={index}
                     className="single-page-catagory-link"
                   >
