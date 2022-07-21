@@ -261,14 +261,14 @@ footer {
 }
 
 .item-img-container {
-  height: 180px;
-  width: 247px;
+  /* height: 160px; */
+  width: 246px;
   border-style: solid black 1px;
 }
 
 .item-img {
   height: 100%;
-  /* width: 100%; */
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -339,6 +339,7 @@ footer {
   .catagory-title {
     font-size: x-large;
     margin-top: 0px;
+    text-align: center;
   }
 
   .item-list {
@@ -410,12 +411,13 @@ footer {
   text-align: center;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1500px) {
   .catagory-location-page {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 45px;
     padding-top: 25px;
+    padding-bottom: 20vh;
   }
   .catagories-page {
     display: grid;

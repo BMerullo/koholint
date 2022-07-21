@@ -11,11 +11,7 @@ const ItemList = ({ items = [] }) => {
           const { id, name, image, slug } = item
           const itemSlug = slugify(name, { lower: true })
           return (
-            <Link
-              to={`https://koholint-wiki.netlify.app/${itemSlug}`}
-              key={id}
-              className="item"
-            >
+            <Link to={`/${itemSlug}`} key={id} className="item">
               <div className="item-img-container">
                 <GatsbyImage
                   image={image.gatsbyImageData}

@@ -34,14 +34,14 @@ const ItemTemplate = ({ data }) => {
             <p className="descriptionText">{description}</p>
           </article>
           <div className="tag-flex">
-            <h5>Location(s): </h5>
+            <h5>Located in: </h5>
             {/* <div className="tag-container"> */}
             <h5 className="tag-container">
               {locations.map((location, index) => {
                 const locationSlug = slugify(location, { lower: true })
                 return (
                   <Link
-                    to={`https://koholint-wiki.netlify.app/${locationSlug}`}
+                    to={`/${locationSlug}`}
                     key={index}
                     className="single-page-location-link"
                   >
@@ -58,7 +58,7 @@ const ItemTemplate = ({ data }) => {
               {catagories.map((catagory, index) => {
                 return (
                   <Link
-                    to={`https://koholint-wiki.netlify.app/${catagory}`}
+                    to={`/${catagory}`}
                     key={index}
                     className="single-page-catagory-link"
                   >

@@ -8,7 +8,7 @@ const NavBar = () => {
       <div className="nav-bar">
         <Link to="/">
           <div className="flex fullscreen">
-            <h2 className="link">Koholint Wiki</h2>
+            <h2 className="link">Koholint Island</h2>
             <img src={palmTree} alt="logo" className="logo nav-link" />
           </div>
           <div className="flex mobilescreen">

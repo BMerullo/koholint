@@ -35,11 +35,7 @@ const LocationItemList = props => {
         const itemSlug = slugify(item.name, { lower: true })
         return location.includes(props.name) ? (
           <div className="item-img-container">
-            <Link
-              to={`https://koholint-wiki.netlify.app/${itemSlug}`}
-              key={item.id}
-              className="item"
-            >
+            <Link to={`/${itemSlug}`} key={item.id} className="item">
               <div className="item-img">
                 <GatsbyImage
                   image={item.image.gatsbyImageData}
