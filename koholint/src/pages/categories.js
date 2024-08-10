@@ -1,17 +1,17 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
-import setupCatagories from "../../utils/setupCatagories"
+import setupCategories from "../../utils/setupCategories"
 import { StaticImage } from "gatsby-plugin-image"
 import SEO from "../components/SEO"
 
-const catagories = ({ data }) => {
-  const newCatagories = setupCatagories(data.allContentfulLinksAwakening.nodes)
+const categories = ({ data }) => {
+  const newCategories = setupCategories(data.allContentfulLinksAwakening.nodes)
   return (
     <Layout>
-      <SEO title="Catagories" />
+      <SEO title="Categories" />
       <main className="page">
-        <header className="hero-catagory">
+        <header className="hero-category">
           <StaticImage
             src="../assets/images/sword.jpeg"
             alt="koholint island"
@@ -21,15 +21,15 @@ const catagories = ({ data }) => {
           ></StaticImage>
           <div className="hero-container">
             <div className="hero-text">
-              <h1>Catagories</h1>
+              <h1>Categories</h1>
             </div>
           </div>
         </header>
-        <section className="catagories-page">
-          {newCatagories.map((catagory, index) => {
-            const [text] = catagory
+        <section className="categories-page">
+          {newCategories.map((category, index) => {
+            const [text] = category
             return (
-              <Link to={`/${text}`} key={index} className="catagory">
+              <Link to={`/${text}`} key={index} className="category">
                 <h5>{text}</h5>
               </Link>
             )
@@ -52,4 +52,4 @@ export const query = graphql`
   }
 `
 
-export default catagories
+export default categories

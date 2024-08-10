@@ -13,7 +13,7 @@ const explore = ({ data }) => {
     <Layout>
       <SEO title="Explore" />
       <main className="page">
-        <header className="hero-catagory">
+        <header className="hero-category">
           <StaticImage
             src="../assets/images/landscape.jpeg"
             alt="koholint island"
@@ -27,7 +27,7 @@ const explore = ({ data }) => {
             </div>
           </div>
         </header>
-        <section className="catagories-page">
+        <section className="category-location-page">
           {newLocations.map((location, index) => {
             const [text] = location
             const locationSlug = slugify(text, { lower: true })

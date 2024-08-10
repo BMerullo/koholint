@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import logoImg from "../assets/images/logos/computer-logo.png"
 import linkedinImg from "../assets/images/logos/linkedin-img.png"
 import githubImg from "../assets/images/logos/github-img.png"
 import logo from "../assets/images/logos/logo.png"
@@ -9,7 +10,7 @@ const Footer = () => {
     <footer>
       <div className="footer-content-container">
         <div>
-          <Link to="/">
+          <Link to="https://bob-merullo.netlify.app/">
             <img className="bob-logo" src={logo} alt="logo" />
           </Link>
         </div>
@@ -23,13 +24,24 @@ const Footer = () => {
                 <Link to="/explore">Explore</Link>
               </li>
               <li>
-                <Link to="/catagories">Catagories</Link>
+                <Link to="/catagories">Categories</Link>
               </li>
             </ul>
           </div>
           <div>
             <ul className="footer-list">
-              <a href="#">Bob's Portfolio</a>
+              <div>
+                <li>
+                  <a href="https://bob-merullo.netlify.app/">
+                    <img
+                      className="link-icon"
+                      src={logoImg}
+                      alt="linkedin logo"
+                    />{" "}
+                    portfolio
+                  </a>
+                </li>
+              </div>
               <div>
                 <li>
                   <a href="https://www.linkedin.com/in/bobmerullo/">

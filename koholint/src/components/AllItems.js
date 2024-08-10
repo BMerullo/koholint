@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import CatagoryList from "./CatagoryList"
+import CategoryList from "./CategoryList"
 // import ItemList from "./ItemList"
 import MainPageItemList from "./MainPageItemList"
 
@@ -31,7 +31,7 @@ const AllItems = () => {
   return (
     <section>
       <div className="main-item-container">
-        <CatagoryList items={items} />
+        <CategoryList items={items} />
         <MainPageItemList items={items} />
       </div>
     </section>

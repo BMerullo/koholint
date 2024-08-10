@@ -27,11 +27,11 @@ const NavBar = () => {
           home
         </Link>
         <Link
-          to="/catagories"
+          to="/categories"
           className="nav-link"
           activeClassName="active-link"
         >
-          catagories
+          categories
         </Link>
         <Link to="/explore" className="nav-link" activeClassName="active-link">
           explore

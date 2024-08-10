@@ -41,7 +41,7 @@ const ItemTemplate = ({ data }) => {
                 const locationSlug = slugify(location, { lower: true })
                 return (
                   <Link
-                    to={`https://koholint-wiki.netlify.app/${locationSlug}`}
+                    to={`/${locationSlug}`}
                     key={index}
                     className="single-page-location-link"
                   >
@@ -53,14 +53,14 @@ const ItemTemplate = ({ data }) => {
           </div>
           {/* </div> */}
           <div className="tag-flex">
-            <h5>Catagorie(s): </h5>
+            <h5>Categorie(s): </h5>
             <h5 className="tag-container">
               {catagories.map((catagory, index) => {
                 return (
                   <Link
-                    to={`https://koholint-wiki.netlify.app/${catagory}`}
+                    to={`/${catagory}`}
                     key={index}
-                    className="single-page-catagory-link"
+                    className="single-page-category-link"
                   >
                     {catagory}
                   </Link>
@@ -74,7 +74,7 @@ const ItemTemplate = ({ data }) => {
         ) : null}
         <section className="locationItemList">
           {locationBoolean === true ? (
-            <div className="catagories-page">
+            <div className="categories-page">
               <LocationItemList name={name} />
             </div>
           ) : null}
